@@ -23,7 +23,6 @@ services:
       - /var/postgres-data:/var/lib/postgresql/data
   sonarqube:
     image: sonarqube:lts
-    user: "${UID}:${GID}"
     ports:
       - "9000:9000"
       - "9092:9092"
